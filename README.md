@@ -35,8 +35,5 @@ or
 
 在`布局`文件中，插入以下代码
 
-```
-@include('common.pjax')
-
-```
+`@include('common.pjax')`
 
