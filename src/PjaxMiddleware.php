@@ -1,17 +1,12 @@
 <?php
-/**
- * User: 袁超<yccphp@163.com>
- * Time: 2015.10.28 下午12:05
- */
-
-namespace YuanChao\Pjax;
+namespace Plugins\Pjax;
 
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Symfony\Component\DomCrawler\Crawler;
 
-class EndaPjaxMiddleware
+class PjaxMiddleware
 {
 
     public function handle($request, Closure $next)

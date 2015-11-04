@@ -73,8 +73,3 @@ YuanChao\Pjax\EndaPjaxServiceProvider::class
 
 ```
 
-### 交流
-
-欢迎加入laravel学习小组交流：`365969825 `
-
-
