@@ -19,7 +19,7 @@ class PjaxServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__ . '/views', 'pjax');
 
         $this->publishes([
-            __DIR__ . '/views' => base_path('resources/views/common/pjax'),
+            __DIR__ . '/views' => base_path('resources/views/common'),
         ]);
 
         $this->publishes([
