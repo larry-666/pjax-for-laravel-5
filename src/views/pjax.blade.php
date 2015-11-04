@@ -5,7 +5,8 @@
 <script>
     $(document).ready(function()
     {
-        $(document).pjax('a', 'body');
+        var target='{{$target}}';
+        $(document).pjax('a', target);
 
         $(document).on('pjax:start', function() {
             NProgress.start();
