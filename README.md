@@ -9,19 +9,24 @@
 
 or
 
-执行 `composer require "larry666/pjax-for-laravel-5":"dev-master"`
+直接执行 `composer require "larry666/pjax-for-laravel-5":"dev-master"`
+
 
 
 2.在`config/app.php` 的 `providers` 数组添加
 
 `Pluigns\Pjax\PjaxServiceProvider::class`
 
+
+
 3.在 `app/Http/Kernel.php` 的 `$middleware` 数组添加
 
 `Pluigns\Pjax\PjaxMiddleware::class`
 
 
+
 4.执行 `php artisan vendor:publish` 将视图/脚本文件拷贝到相应目录
+
 
 
 ### 使用
