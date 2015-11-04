@@ -4,31 +4,24 @@
 ### 安装
 
 1.在 `composer.json` 的 require里 加入
-`"yuanchao/pjax-for-laravel-5":"dev-master"`
 
-执行 `composer update`
+`"yuanchao/pjax-for-laravel-5":"dev-master"` 接着执行 `composer update`
 
 or
 
 执行 `composer require "larry666/pjax-for-laravel-5":"dev-master"`
 
 
+2.在`config/app.php` 的 `providers` 数组添加
 
-3.在config/app.php 的 `providers` 数组加入一条
+`Pluigns\Pjax\PjaxServiceProvider::class`
 
+3.在 `app/Http/Kernel.php` 的 `$middleware` 数组添加
 
-```
-Pluigns\Pjax\PjaxServiceProvider::class
-
-```
-
-4.在 `app/Http/Kernel.php` 的 `$middleware` 数组里添加
-
-`\Pluigns\Pjax\PjaxMiddleware::class'
+`Pluigns\Pjax\PjaxMiddleware::class`
 
 
-
-5.执行 `php artisan vendor:publish`
+4.执行 `php artisan vendor:publish` 将视图/脚本文件拷贝到相应目录
 
 
 ### 使用
